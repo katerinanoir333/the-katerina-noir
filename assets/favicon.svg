@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="House Noir keyhole seal">
+  <rect width="64" height="64" fill="#050505"/>
+  <circle cx="32" cy="32" r="25" fill="#0b0b0f" stroke="#b89b5e" stroke-width="1.5"/>
+  <path d="M32 17a9 9 0 0 0-5 16.48V46h10V33.48A9 9 0 0 0 32 17z" fill="#d2bd82"/>
+  <path d="M15 32h8M41 32h8M32 15v-5M32 54v-5" stroke="#5a0f23" stroke-width="2" stroke-linecap="round"/>
+</svg>
