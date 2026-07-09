@@ -71,7 +71,7 @@ function revealOnScroll() {
   reveals.forEach((item) => observer.observe(item));
 }
 
-function validateForm(event) {
+async function validateForm(event) {
   event.preventDefault();
   formError.textContent = "";
   formSuccess.textContent = "";
@@ -88,12 +88,33 @@ function validateForm(event) {
     return;
   }
 
-  formSuccess.textContent = "Your request has been prepared. Private details are shared at my discretion.";
-  accessForm.reset();
+  const submitButton = accessForm.querySelector("button[type='submit']");
+  submitButton.disabled = true;
+  submitButton.textContent = "Submitting...";
 
-  // No real data is sent while hosted as a static GitHub Pages site.
-  // To connect later, replace this success state with Formspree, Tally,
-  // Google Forms, Netlify Forms, or a private backend endpoint.
+  try {
+    const response = await fetch(accessForm.action, {
+      method: "POST",
+      body: new FormData(accessForm),
+      headers: { Accept: "application/json" }
+    });
+
+    if (!response.ok) {
+      throw new Error("Formspree rejected the request.");
+    }
+
+    formSuccess.textContent = "Your request has been sent. Private details are shared at my discretion.";
+    accessForm.reset();
+  } catch (error) {
+    formError.textContent = "The request could not be sent. Please try again, or send your introduction privately on Instagram.";
+  } finally {
+    submitButton.disabled = false;
+    submitButton.textContent = "Submit Request";
+  }
+
+  // Formspree is currently connected through the form action in index.html.
+  // To change providers later, replace the form action and this fetch target
+  // with Tally, Google Forms, Netlify Forms, or a private backend endpoint.
 }
 
 window.addEventListener("scroll", updateHeader, { passive: true });

@@ -58,19 +58,24 @@ https://www.instagram.com/thekaterinanoir
 
 with the final public profile URL if needed.
 
-## Connect The Form Later
+## Form Connection
 
-The current form does not send data to a server. It validates required fields and shows a private confirmation message.
+The current form is connected to Formspree:
 
-Future connection options:
+```text
+https://formspree.io/f/mnjkkdvo
+```
 
-- Formspree
+It validates required fields, sends the request to Formspree, and then shows a private confirmation message.
+
+Future alternatives:
+
 - Tally
 - Google Forms
 - Netlify Forms
 - Custom backend
 
-The connection notes are also included as comments inside `index.html` and `script.js`.
+Connection notes are also included as comments inside `index.html` and `script.js`.
 
 ## Public vs Private
 

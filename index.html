@@ -273,7 +273,9 @@
             </div>
           </div>
 
-          <form class="access-form reveal" data-access-form novalidate>
+          <form class="access-form reveal" data-access-form action="https://formspree.io/f/mnjkkdvo" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="New The Katerina Noir access request">
+            <input type="hidden" name="site" value="The Katerina Noir">
             <div class="form-grid">
               <label>
                 <span>Name or alias</span>
@@ -332,12 +334,12 @@
             <button class="button button-primary" type="submit">Submit Request</button>
             <p class="form-success" data-form-success aria-live="polite"></p>
 
-            <!-- Future form connection options:
-              - Formspree: set method="POST" and action="https://formspree.io/f/YOUR_ID"
+            <!-- Formspree is connected through the form action above.
+              Future alternatives:
               - Tally: embed the Tally form or redirect this submit handler to your Tally link
               - Google Forms: map fields into a prefilled Google Form URL
               - Netlify Forms: add data-netlify="true" and deploy on Netlify
-              - Custom backend: replace the JavaScript success state with a fetch() POST request
+              - Custom backend: replace the Formspree endpoint with a private backend endpoint
             -->
           </form>
         </div>
