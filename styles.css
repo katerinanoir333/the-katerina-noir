@@ -1092,3 +1092,24 @@ p + p {
     box-shadow: 0 0 30px rgba(219, 196, 137, 0.25);
   }
 }
+/* Mobile header brand: The / Katerina / Noir */
+@media (max-width: 719px) {
+  .brand span:last-child {
+    max-width: none;
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+    font-size: 0;
+    line-height: 1;
+  }
+
+  .brand span:last-child::before {
+    content: "The\A Katerina\A Noir";
+    white-space: pre-line;
+    display: block;
+    font-size: 0.9rem;
+    line-height: 0.92;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+}
