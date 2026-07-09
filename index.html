@@ -3,362 +3,395 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The Katerina Noir: a private access portal for House Rules, offerings, date protocol, boundaries, and request consideration.">
-    <title>The Katerina Noir | A Private Invitation</title>
+    <title>Katerina Noir Panama | Private House Noir Access</title>
+    <meta name="description" content="The Katerina Noir is a private House Noir portal for screened access, etiquette, tribute-based consideration, discretion, and curated social experiences in Panama.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#12030a">
+    <link rel="canonical" href="https://YOUR-GITHUB-USERNAME.github.io/the-katerina-noir/">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Update canonical, og:url, sitemap.xml, and robots.txt after GitHub Pages gives the final domain. -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="The Katerina Noir | Private House Noir Access">
+    <meta property="og:description" content="A discreet House Noir portal for etiquette, screening, tribute culture, boundaries, and private access consideration.">
+    <meta property="og:url" content="https://YOUR-GITHUB-USERNAME.github.io/the-katerina-noir/">
+    <meta property="og:site_name" content="The Katerina Noir">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="The Katerina Noir | Private House Noir Access">
+    <meta name="twitter:description" content="A discreet House Noir portal for etiquette, screening, tribute culture, boundaries, and private access consideration.">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://YOUR-GITHUB-USERNAME.github.io/the-katerina-noir/#organization",
+            "name": "The Katerina Noir",
+            "url": "https://YOUR-GITHUB-USERNAME.github.io/the-katerina-noir/",
+            "sameAs": ["https://www.instagram.com/thekaterinanoir"],
+            "description": "Adult-only private brand for House Noir etiquette, screened access, private audience requests, and curated social experience consideration."
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://YOUR-GITHUB-USERNAME.github.io/the-katerina-noir/#website",
+            "name": "The Katerina Noir",
+            "url": "https://YOUR-GITHUB-USERNAME.github.io/the-katerina-noir/",
+            "publisher": {
+              "@id": "https://YOUR-GITHUB-USERNAME.github.io/the-katerina-noir/#organization"
+            }
+          },
+          {
+            "@type": "Brand",
+            "@id": "https://YOUR-GITHUB-USERNAME.github.io/the-katerina-noir/#brand",
+            "name": "The House Noir",
+            "slogan": "Velvet. Intention. Respect."
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://YOUR-GITHUB-USERNAME.github.io/the-katerina-noir/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is Katerina Noir?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Katerina Noir is an adult-only private persona and House Noir access portal for screened private audience requests, etiquette, discretion, and curated social experience consideration."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does tribute guarantee approval?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Tribute is a signal of seriousness and respect for time, attention, consideration, and preparation. It does not guarantee approval, intimacy, physical contact, or any specific outcome."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is screening required?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Screening protects both sides and helps confirm maturity, discretion, intention, and verifiable presence before private details are discussed."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
-    <div class="ambient" aria-hidden="true"></div>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
 
     <header class="site-header" data-header>
-      <a class="brand" href="#entrance" aria-label="The Katerina Noir">
-        <span class="brand-mark">KN</span>
+      <a class="brand" href="#threshold" aria-label="The Katerina Noir home" data-i18n-aria="brandHome">
+        <span class="brand-seal" aria-hidden="true"></span>
         <span>The Katerina Noir</span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+      <div class="language-toggle" aria-label="Language selector" data-i18n-aria="languageSelector">
+        <span class="language-label" data-i18n="languageLabel">Language</span>
+        <button class="language-button is-active" type="button" data-language="en" aria-pressed="true">EN</button>
+        <button class="language-button" type="button" data-language="es" aria-pressed="false">ES</button>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle data-i18n-aria="openNavigation">
         <span></span>
         <span></span>
       </button>
 
-      <nav class="site-nav" data-nav aria-label="Primary navigation">
-        <a href="#rules">House Rules</a>
-        <a href="#offering">Offerings</a>
-        <a href="#intention">Intention</a>
-        <a href="#protocol">Protocol</a>
-        <a href="#access">Request Access</a>
+      <nav class="site-nav" data-nav aria-label="Primary navigation" data-i18n-aria="primaryNavigation">
+        <a href="#rules" data-i18n="navRules">Rules</a>
+        <a href="#offerings" data-i18n="navOfferings">Offerings</a>
+        <a href="#screening" data-i18n="navScreening">Screening</a>
+        <a href="#apply" data-i18n="navApply">Apply</a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero room" id="entrance" aria-labelledby="hero-title">
-        <div class="hero-ornament" aria-hidden="true">
-          <span class="monogram">KN</span>
+    <aside class="path-oracle" aria-label="House journey" data-i18n-aria="houseJourney">
+      <span data-room-kicker>01</span>
+      <strong data-room-name>Threshold</strong>
+    </aside>
+
+    <main id="main">
+      <section class="scene hero-scene" id="threshold" data-room-label="Threshold" data-room-label-es="Umbral" aria-labelledby="hero-title">
+        <div class="velvet-door" aria-hidden="true">
+          <span class="keyhole"></span>
+          <span class="moon"></span>
         </div>
-        <div class="hero-content reveal">
-          <p class="eyebrow">The Entrance</p>
-          <h1 id="hero-title">The Katerina Noir</h1>
-          <p class="tagline">Velvet. Intention. Respect.</p>
-          <p class="hero-subtitle">A Private Invitation</p>
-          <p class="hero-copy">You found the door. What happens next depends on intention, generosity, and manners.</p>
-          <p class="hero-note">The House Noir is built on elegance, discretion, desire, and clear boundaries. If you wish to approach me, do so with confidence, respect, and purpose.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#found">Enter the House</a>
-            <a class="button button-secondary" href="#rules">Read the Rules</a>
-            <a class="button button-quiet" href="#access">Request Access</a>
+
+        <div class="section-shell hero-layout">
+          <div class="hero-copy reveal">
+            <p class="eyebrow" data-i18n="heroEyebrow">Private threshold</p>
+            <h1 id="hero-title">The Katerina Noir</h1>
+            <p class="tagline">Velvet. Intention. Respect.</p>
+            <p class="hero-lede" data-i18n="heroLede">A screened House Noir portal for private audience, etiquette, offerings, and discretion.</p>
+            <div class="hero-actions" aria-label="Primary actions" data-i18n-aria="primaryActions">
+              <a class="button button-primary" href="#apply" data-i18n="ctaApply">Apply for Access</a>
+              <a class="button button-secondary" href="#rules" data-i18n="ctaRules">Read the Rules</a>
+            </div>
           </div>
+
+          <aside class="ritual-strip reveal" aria-label="House access principles" data-i18n-aria="principles">
+            <span data-i18n="stripOne">18+ only</span>
+            <span data-i18n="stripTwo">Screened access</span>
+            <span data-i18n="stripThree">Discretion required</span>
+          </aside>
         </div>
-        <div class="scroll-cue" aria-hidden="true">Scroll</div>
       </section>
 
-      <section class="room found" id="found" aria-labelledby="found-title">
-        <div class="room-shell two-column">
+      <section class="scene manifesto-scene" id="manifesto" data-room-label="Manifesto" data-room-label-es="Manifiesto" aria-labelledby="manifesto-title">
+        <div class="section-shell compact-copy reveal">
+          <p class="eyebrow" data-i18n="manifestoEyebrow">The House Noir</p>
+          <h2 id="manifesto-title" data-i18n="manifestoTitle">Not casual. Not owed. Not for everyone.</h2>
+          <p data-i18n="manifestoCopy">This is a private doorway for composed adults who understand manners, privacy, generosity, and boundaries.</p>
+        </div>
+      </section>
+
+      <section class="scene split-scene" id="rules" data-room-label="Rules" data-room-label-es="Reglas" aria-labelledby="rules-title">
+        <div class="section-shell split-layout">
           <div class="section-title reveal">
-            <p class="eyebrow">For Those Who Found Me</p>
-            <h2 id="found-title">This is your first glimpse into my world.</h2>
-          </div>
-          <div class="copy-block reveal">
-            <p>If you arrived here from Tinder or Instagram, consider this your first glimpse into my world. I am not here for casual dating, empty attention, or endless conversation. My time is intentional, and access begins with respect.</p>
-            <p class="statement">Curiosity is welcome. Entitlement is not.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="room rules" id="rules" aria-labelledby="rules-title">
-        <div class="room-shell">
-          <div class="section-title centered reveal">
-            <p class="eyebrow">House Rules</p>
-            <h2 id="rules-title">Before requesting my attention, understand the rules of the House.</h2>
+            <p class="eyebrow" data-i18n="rulesEyebrow">House Rules</p>
+            <h2 id="rules-title" data-i18n="rulesTitle">The door opens only for the composed.</h2>
+            <p data-i18n="rulesCopy">If this feels excessive, the House has already answered you.</p>
           </div>
 
-          <div class="accordion rule-accordion reveal" data-accordion>
+          <div class="accordion reveal" data-accordion>
             <article class="accordion-item is-open">
               <button type="button" aria-expanded="true">
-                <span>Rule I</span>
-                Approach with Intention
+                <span data-i18n="ruleOneLabel">Rule I</span>
+                <span data-i18n="ruleOneTitle">Approach with intention</span>
               </button>
               <div class="accordion-panel">
-                <p>Introduce yourself with confidence, clarity, and respect. Empty messages and vague requests are ignored.</p>
+                <p data-i18n="ruleOneCopy">Introduce yourself clearly. Empty messages are ignored.</p>
               </div>
             </article>
             <article class="accordion-item">
               <button type="button" aria-expanded="false">
-                <span>Rule II</span>
-                Offerings Open the Door
+                <span data-i18n="ruleTwoLabel">Rule II</span>
+                <span data-i18n="ruleTwoTitle">Screening is required</span>
               </button>
               <div class="accordion-panel">
-                <p>Thoughtful offerings are how you court my attention. A first offering is required before the qualifying process begins.</p>
+                <p data-i18n="ruleTwoCopy">No verification, no private details. Safety comes before access.</p>
               </div>
             </article>
             <article class="accordion-item">
               <button type="button" aria-expanded="false">
-                <span>Rule III</span>
-                Nothing Is Assumed
+                <span data-i18n="ruleThreeLabel">Rule III</span>
+                <span data-i18n="ruleThreeTitle">Tribute is not entitlement</span>
               </button>
               <div class="accordion-panel">
-                <p>Gifts do not guarantee approval, intimacy, physical contact, or any specific outcome.</p>
+                <p data-i18n="ruleThreeCopy">Offerings signal seriousness. They never guarantee approval, intimacy, contact, or outcomes.</p>
               </div>
             </article>
             <article class="accordion-item">
               <button type="button" aria-expanded="false">
-                <span>Rule IV</span>
-                Discretion Matters
+                <span data-i18n="ruleFourLabel">Rule IV</span>
+                <span data-i18n="ruleFourTitle">The House protects its peace</span>
               </button>
               <div class="accordion-panel">
-                <p>Privacy, manners, and emotional intelligence are expected.</p>
-              </div>
-            </article>
-            <article class="accordion-item">
-              <button type="button" aria-expanded="false">
-                <span>Rule V</span>
-                Respect Keeps the Door Open
-              </button>
-              <div class="accordion-panel">
-                <p>I reserve the right to decline, pause, or end any interaction at any time.</p>
+                <p data-i18n="ruleFourCopy">Pressure, false information, intoxication, or boundary testing ends access.</p>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="room offering" id="offering" aria-labelledby="offering-title">
-        <div class="room-shell">
-          <div class="section-title split reveal">
-            <div>
-              <p class="eyebrow">The Offering System</p>
-              <h2 id="offering-title">Access unfolds in stages.</h2>
-            </div>
-            <p>Each offering reflects seriousness, respect, and intention. Offerings grant consideration and preparation; they do not create entitlement.</p>
-          </div>
-
-          <div class="card-grid three">
-            <article class="ritual-card reveal">
-              <span class="card-number">01</span>
-              <h3>First Offering</h3>
-              <p>A gift for my attention is required before the qualifying process begins. It reflects seriousness and respect for my time. It does not guarantee approval.</p>
-            </article>
-            <article class="ritual-card reveal">
-              <span class="card-number">02</span>
-              <h3>Access Gift</h3>
-              <p>Once approved, a second gift is required to continue into planning. Approval does not create entitlement. It simply allows the conversation to move forward.</p>
-            </article>
-            <article class="ritual-card reveal">
-              <span class="card-number">03</span>
-              <h3>Sponsorships &amp; Extras</h3>
-              <p>Special requests are considered separately. These may include styling, lingerie sponsorship, beauty tribute, date preparation, or priority attention.</p>
-              <ul class="gold-list">
-                <li>Choose my look</li>
-                <li>Lingerie sponsorship</li>
-                <li>Beauty tribute</li>
-                <li>Date preparation</li>
-                <li>Priority attention</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="room intention" id="intention" aria-labelledby="intention-title">
-        <div class="room-shell intention-layout">
+      <section class="scene offerings-scene" id="offerings" data-room-label="Offerings" data-room-label-es="Offerings" aria-labelledby="offerings-title">
+        <div class="section-shell">
           <div class="section-title reveal">
-            <p class="eyebrow">Choose Your Intention</p>
-            <h2 id="intention-title">What brings you to the House Noir?</h2>
-            <p>Select the door that matches your intention.</p>
+            <p class="eyebrow" data-i18n="offeringsEyebrow">Offerings</p>
+            <h2 id="offerings-title" data-i18n="offeringsTitle">Seriousness has a language.</h2>
+          </div>
+
+          <div class="offering-stack">
+            <article class="offering-card reveal">
+              <span>01</span>
+              <h3 data-i18n="firstTributeTitle">First Tribute</h3>
+              <p data-i18n="firstTributeCopy">Required before qualifying. It signals respect for private attention.</p>
+            </article>
+            <article class="offering-card reveal">
+              <span>02</span>
+              <h3 data-i18n="accessGiftTitle">Access Gift</h3>
+              <p data-i18n="accessGiftCopy">May follow approval before planning continues. Approval never creates entitlement.</p>
+            </article>
+            <article class="offering-card reveal">
+              <span>03</span>
+              <h3 data-i18n="sponsorshipTitle">Sponsorships</h3>
+              <p data-i18n="sponsorshipCopy">Beauty, wardrobe, certificates, dinner preparation, and thoughtful gifts are considered privately.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene intention-scene" id="intention" data-room-label="Intention" data-room-label-es="Intencion" aria-labelledby="intention-title">
+        <div class="section-shell intention-layout">
+          <div class="section-title reveal">
+            <p class="eyebrow" data-i18n="intentionEyebrow">Choose your door</p>
+            <h2 id="intention-title" data-i18n="intentionTitle">What brings you here?</h2>
           </div>
           <div class="intention-panel reveal">
-            <div class="intention-options" role="list" aria-label="Intention choices">
-              <button class="intention-button is-active" type="button" data-intention="attention">I want to court your attention</button>
-              <button class="intention-button" type="button" data-intention="date">I want to request a private date</button>
-              <button class="intention-button" type="button" data-intention="look">I want to sponsor your look</button>
-              <button class="intention-button" type="button" data-intention="gift">I want to send a gift</button>
+            <div class="intention-options" aria-label="Intention choices" data-i18n-aria="intentionChoices">
+              <button class="intention-button is-active" type="button" data-intention="attention" data-i18n="intentAttention">Court attention</button>
+              <button class="intention-button" type="button" data-intention="date" data-i18n="intentDate">Request a dinner date</button>
+              <button class="intention-button" type="button" data-intention="sponsor" data-i18n="intentSponsor">Sponsor a mood</button>
+              <button class="intention-button" type="button" data-intention="gift" data-i18n="intentGift">Send a gift</button>
             </div>
-            <div class="intention-result" data-intention-result aria-live="polite">
-              <p class="eyebrow">The Proper Door</p>
-              <h3>Begin with a First Offering.</h3>
-              <p>Show intention before requesting time.</p>
-            </div>
+            <div class="intention-result" data-intention-result aria-live="polite"></div>
           </div>
         </div>
       </section>
 
-      <section class="room protocol" id="protocol" aria-labelledby="protocol-title">
-        <div class="room-shell two-column">
+      <section class="scene screening-scene" id="screening" data-room-label="Screening" data-room-label-es="Filtro" aria-labelledby="screening-title">
+        <div class="section-shell">
           <div class="section-title reveal">
-            <p class="eyebrow">Date Protocol</p>
-            <h2 id="protocol-title">My presence is not casual.</h2>
-            <p>To take me on a date, you must first understand that a date requires intention, qualifying, offering, planning, and discretion.</p>
+            <p class="eyebrow" data-i18n="screeningEyebrow">The Veil Check</p>
+            <h2 id="screening-title" data-i18n="screeningTitle">Read. Apply. Verify. Await instruction.</h2>
           </div>
-          <div class="protocol-list reveal">
-            <ul>
-              <li>A First Offering is required before qualifying.</li>
-              <li>An Access Gift is required after approval.</li>
-              <li>Public first meetings are preferred.</li>
-              <li>Hygiene, punctuality, manners, and discretion are expected.</li>
-              <li>Private details are discussed only after qualification.</li>
-              <li>Chemistry matters. Nothing is assumed.</li>
-            </ul>
-            <p class="important">An offering grants consideration and preparation. It does not guarantee intimacy, physical contact, or any specific outcome.</p>
+          <div class="process-ribbon reveal">
+            <span data-i18n="processRead">Read rules</span>
+            <span data-i18n="processApply">Apply</span>
+            <span data-i18n="processVerify">Verify if requested</span>
+            <span data-i18n="processAwait">Await reply</span>
           </div>
         </div>
       </section>
 
-      <section class="room black-book" id="black-book" aria-labelledby="black-book-title">
-        <div class="room-shell">
-          <div class="section-title centered reveal">
-            <p class="eyebrow">The Black Book</p>
-            <h2 id="black-book-title">Private Preferences</h2>
-            <p>Approved admirers may be invited to learn more about my preferences.</p>
-          </div>
-
-          <div class="card-grid five">
-            <article class="preference-card reveal">
-              <h3>Beauty Tributes</h3>
-              <p>Nails, hair, perfume, skincare, spa preparation.</p>
-            </article>
-            <article class="preference-card reveal">
-              <h3>Styling</h3>
-              <p>Black Velvet, Corporate Goth, Lace Ritual, Soft Danger.</p>
-            </article>
-            <article class="preference-card reveal">
-              <h3>Lingerie Sponsorship</h3>
-              <p>You may sponsor the mood. Final selection remains mine.</p>
-            </article>
-            <article class="preference-card reveal">
-              <h3>Thoughtful Gifts</h3>
-              <p>Flowers, certificates, wishlist offerings, elegant details.</p>
-            </article>
-            <article class="preference-card reveal">
-              <h3>Date Preparation</h3>
-              <p>Preparation, transportation, glam, and the energy required to receive your presence.</p>
-            </article>
-          </div>
+      <section class="scene privacy-scene" id="privacy" data-room-label="Boundaries" data-room-label-es="Limites" aria-labelledby="privacy-title">
+        <div class="section-shell compact-copy reveal">
+          <p class="eyebrow" data-i18n="privacyEyebrow">Boundaries</p>
+          <h2 id="privacy-title" data-i18n="privacyTitle">The ritual has limits.</h2>
+          <p data-i18n="privacyCopy">No pressure. No surprise guests. No intoxication. No false information. Katerina may decline or end any interaction.</p>
         </div>
       </section>
 
-      <section class="room boundaries" id="boundaries" aria-labelledby="boundaries-title">
-        <div class="room-shell two-column">
+      <section class="scene apply-scene" id="apply" data-room-label="Apply" data-room-label-es="Aplicar" aria-labelledby="apply-title">
+        <div class="section-shell apply-layout">
           <div class="section-title reveal">
-            <p class="eyebrow">Boundaries</p>
-            <h2 id="boundaries-title">Limits protect the atmosphere.</h2>
-          </div>
-          <div class="copy-block reveal">
-            <p>Gifts are for my time, attention, consideration, and preparation. They do not guarantee approval, intimacy, physical contact, or any specific outcome.</p>
-            <ul class="boundary-list">
-              <li>Consent, respect, and communication come first.</li>
-              <li>No pressure.</li>
-              <li>No intoxication.</li>
-              <li>No surprise guests.</li>
-              <li>No entitlement.</li>
-              <li>My time and attention remain at my discretion.</li>
-              <li>I reserve the right to decline or end any interaction at any time.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="room access" id="access" aria-labelledby="access-title">
-        <div class="room-shell access-layout">
-          <div class="section-title reveal">
-            <p class="eyebrow">Request Access</p>
-            <h2 id="access-title">Request consideration.</h2>
-            <p>If you have read the House Rules and understand the process, you may request consideration.</p>
-            <div class="mini-checklist" data-mini-checklist>
-              <label><input type="checkbox"> I understand this is not casual dating.</label>
-              <label><input type="checkbox"> I can approach with discretion.</label>
-              <label><input type="checkbox"> I accept that access is never guaranteed.</label>
+            <p class="eyebrow" data-i18n="applyEyebrow">Request Entry</p>
+            <h2 id="apply-title" data-i18n="applyTitle">Apply only if you understand.</h2>
+            <p data-i18n="applyCopy">This form sends through Formspree. Do not upload sensitive documents here.</p>
+            <div class="notice">
+              <strong data-i18n="noticeTitle">Before submitting</strong>
+              <span data-i18n="noticeCopy">Access is considered, never owed. Gifts are for time, attention, consideration, and preparation only.</span>
             </div>
           </div>
 
           <form class="access-form reveal" data-access-form action="https://formspree.io/f/mnjkkdvo" method="POST" novalidate>
             <input type="hidden" name="_subject" value="New The Katerina Noir access request">
             <input type="hidden" name="site" value="The Katerina Noir">
+            <label class="honeypot" aria-hidden="true">
+              Leave this field empty
+              <input type="text" name="company" tabindex="-1" autocomplete="off">
+            </label>
+
             <div class="form-grid">
-              <label>
-                <span>Name or alias</span>
-                <input type="text" name="name" autocomplete="name" required>
+              <label for="name">
+                <span><span data-i18n="fieldName">Name or alias</span> <em data-i18n="required">Required</em></span>
+                <input id="name" type="text" name="name" autocomplete="name" required aria-required="true">
               </label>
-              <label>
-                <span>Age confirmation</span>
-                <select name="age" required>
-                  <option value="">Select one</option>
-                  <option value="confirmed">I confirm I am 18+</option>
+              <label for="age">
+                <span><span data-i18n="fieldAge">Age confirmation</span> <em data-i18n="required">Required</em></span>
+                <select id="age" name="age" required aria-required="true">
+                  <option value="" data-i18n="selectOne">Select one</option>
+                  <option value="confirmed-18-plus" data-i18n="ageConfirm">I confirm I am 18+</option>
                 </select>
               </label>
-              <label>
-                <span>City</span>
-                <input type="text" name="city" required>
+              <label for="city">
+                <span><span data-i18n="fieldCity">City</span> <em data-i18n="required">Required</em></span>
+                <input id="city" type="text" name="city" required aria-required="true">
               </label>
-              <label>
-                <span>Instagram handle</span>
-                <input type="text" name="instagram" placeholder="@handle" required>
+              <label for="instagram">
+                <span><span data-i18n="fieldInstagram">Instagram handle</span> <em data-i18n="required">Required</em></span>
+                <input id="instagram" type="text" name="instagram" placeholder="@handle" required aria-required="true">
               </label>
-              <label>
-                <span>How did you find me?</span>
-                <select name="source" required>
-                  <option value="">Select one</option>
+              <label for="source">
+                <span><span data-i18n="fieldSource">How did you find me?</span> <em data-i18n="required">Required</em></span>
+                <select id="source" name="source" required aria-required="true">
+                  <option value="" data-i18n="selectOne">Select one</option>
                   <option>Tinder</option>
                   <option>Instagram</option>
-                  <option>Referral</option>
-                  <option>Other</option>
+                  <option data-i18n="sourceReferral">Referral</option>
+                  <option data-i18n="sourceOther">Other</option>
                 </select>
               </label>
-              <label>
-                <span>What are you seeking?</span>
-                <select name="seeking" required>
-                  <option value="">Select one</option>
-                  <option>To court your attention</option>
-                  <option>To request a private date</option>
-                  <option>To sponsor your look</option>
-                  <option>To send a thoughtful gift</option>
+              <label for="seeking">
+                <span><span data-i18n="fieldSeeking">What are you seeking?</span> <em data-i18n="required">Required</em></span>
+                <select id="seeking" name="seeking" required aria-required="true">
+                  <option value="" data-i18n="selectOne">Select one</option>
+                  <option data-i18n="seekAttention">To court your attention</option>
+                  <option data-i18n="seekDate">To request a dinner date by application</option>
+                  <option data-i18n="seekSponsor">To sponsor a look or ritual preparation</option>
+                  <option data-i18n="seekGift">To send a thoughtful gift</option>
                 </select>
               </label>
             </div>
 
-            <fieldset class="agreement-group">
-              <legend>House confirmations</legend>
-              <label><input type="checkbox" name="readRules" required> I have read the House Rules.</label>
-              <label><input type="checkbox" name="giftPurpose" required> I understand that gifts are for time, attention, consideration, and preparation.</label>
-              <label><input type="checkbox" name="noGuarantee" required> I understand that gifts do not guarantee approval, intimacy, physical contact, or any specific outcome.</label>
-            </fieldset>
-
-            <label>
-              <span>Message</span>
-              <textarea name="message" rows="5" required placeholder="Introduce yourself with clarity, manners, and purpose."></textarea>
+            <label for="message">
+              <span><span data-i18n="fieldMessage">Message</span> <em data-i18n="required">Required</em></span>
+              <textarea id="message" name="message" rows="4" required aria-required="true" placeholder="Introduce yourself with clarity, manners, and purpose." data-i18n-placeholder="messagePlaceholder"></textarea>
             </label>
 
-            <p class="form-error" data-form-error role="alert"></p>
-            <button class="button button-primary" type="submit">Submit Request</button>
-            <p class="form-success" data-form-success aria-live="polite"></p>
+            <fieldset class="agreement-group">
+              <legend data-i18n="confirmations">Confirmations</legend>
+              <label><input type="checkbox" name="read_rules" required aria-required="true"> <span data-i18n="confirmRules">I have read the House Rules.</span></label>
+              <label><input type="checkbox" name="no_guarantee" required aria-required="true"> <span data-i18n="confirmNoGuarantee">I understand gifts do not guarantee approval, intimacy, contact, or outcomes.</span></label>
+              <label><input type="checkbox" name="truthful_info" required aria-required="true"> <span data-i18n="confirmTruth">False information means immediate disqualification.</span></label>
+            </fieldset>
 
-            <!-- Formspree is connected through the form action above.
-              Future alternatives:
-              - Tally: embed the Tally form or redirect this submit handler to your Tally link
-              - Google Forms: map fields into a prefilled Google Form URL
-              - Netlify Forms: add data-netlify="true" and deploy on Netlify
-              - Custom backend: replace the Formspree endpoint with a private backend endpoint
-            -->
+            <div class="submit-row">
+              <p class="form-error" data-form-error role="alert"></p>
+              <button class="button button-primary" type="submit" data-i18n="submit">Submit Application</button>
+              <p class="form-success" data-form-success aria-live="polite"></p>
+            </div>
           </form>
         </div>
       </section>
 
-      <section class="room closing" aria-labelledby="closing-title">
-        <div class="room-shell closing-inner reveal">
-          <p class="eyebrow">The Final Door</p>
-          <h2 id="closing-title">The Door Is Opened by Intention</h2>
-          <blockquote>Offerings open the door. Chemistry decides the rest.</blockquote>
+      <section class="scene faq-scene" id="faq" data-room-label="FAQ" data-room-label-es="FAQ" aria-labelledby="faq-title">
+        <div class="section-shell">
+          <div class="section-title reveal">
+            <p class="eyebrow">FAQ</p>
+            <h2 id="faq-title" data-i18n="faqTitle">Before you ask</h2>
+          </div>
+          <div class="accordion reveal" data-faq>
+            <article class="accordion-item is-open">
+              <button type="button" aria-expanded="true" data-i18n="faqOneQ">Does tribute guarantee access?</button>
+              <div class="accordion-panel"><p data-i18n="faqOneA">No. Tribute begins consideration. Chemistry and discretion decide the rest.</p></div>
+            </article>
+            <article class="accordion-item">
+              <button type="button" aria-expanded="false" data-i18n="faqTwoQ">Is screening required?</button>
+              <div class="accordion-panel"><p data-i18n="faqTwoA">Yes. Screening protects both sides before private details are discussed.</p></div>
+            </article>
+            <article class="accordion-item">
+              <button type="button" aria-expanded="false" data-i18n="faqThreeQ">Are flowers preferred?</button>
+              <div class="accordion-panel"><p data-i18n="faqThreeA">Flowers are not preferred. Certificates, perfume, beauty rituals, books, candles, jewelry, wardrobe tributes, or dinner experiences align better with The House.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene closing-scene" aria-labelledby="closing-title">
+        <div class="section-shell closing-inner reveal">
+          <p class="eyebrow" data-i18n="closingEyebrow">The final door</p>
+          <h2 id="closing-title" data-i18n="closingTitle">Offerings open the door. Chemistry decides the rest.</h2>
+          <a class="button button-primary" href="#apply" data-i18n="ctaRequestEntry">Request Entry</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Private details are shared at my discretion.</p>
+      <p data-i18n="footerCopy">Private details are shared at my discretion.</p>
       <a href="https://www.instagram.com/thekaterinanoir" target="_blank" rel="noreferrer">@thekaterinanoir</a>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
